@@ -11,6 +11,7 @@ func main() {
     }
     c.JSON(200, gin.H{
       "message": "Hello " + name + "!",
+      "version": gin.Version,
     })
   })
   router.Run(":8080")
